@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            /* height: 3000px; */
+            font: 400 15px/1.8 "Lato", sans-serif;
+            color: #777;
+        }
+        #all{
+            /* background-color: aqua; */
+            width: 100%;
+            height: 100vh;
+        }
+        .banner{
+            width: 100%;
+            height: 100%;
+            background-size:cover;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            position:relative;
+            opacity: 0.8;
+            background-attachment: fixed;
+        }
+        .banner-1-4{
+            background-image: url(./img/banner.jpg);
+        }
+        #banner-2{
+            background-image: url(./img/banner2.jpg);
+        }
+        #banner-3{
+            background-image: url(./img/Avatar.png);
+            background-size:40%;
+            background-position: 50%;
+        }
+        .btn{
+            /* width: 300px; */
+            color: white;
+            font-size: 32px;
+            padding: 30px;
+            /* span是行內成形不會呈現體積效應 */
+            display: inline-block;
+            text-align: center;
+            border-radius: 10px;
+            position:absolute;
+            left:50%;
+            top:50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.8;
+        }
+        .btn-1-4{
+            background-color: black;
+        }
+        #btn-2{
+            color: lightgrey;
+        }
+        .content{
+            padding: 60px;
+        }
+        #content-2{
+            background-color: black;
+            opacity:0.8;
+        }
+        #title-1{
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight:bold;
+        }
+        .text{
+            text-align: justify;
+            /* text-align: center; */
+        }
+        #text-2{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div id="banner-1" class="banner banner-1-4">
+            <span id="btn-1" class="btn btn-1-4">SCROLL DOWN</span>
+        </div>
+        <div id="content-1" class="content">
+            <div id="title-1">
+                PARALLAX DEMO
+            </div>
+            <div id="text" class="text">
+                Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.
+            </div>
+        </div>
+        <div id="banner-2" class="banner">
+            <span id="btn-2" class="btn">LESS HEIGHT</span>
+        </div>
+        <div id="content-2" class="content">
+            <div id="text-2" class="text">
+                Scroll up and down to really get the feeling of how Parallax Scrolling works.
+            </div>
+        </div>
+        <div id="banner-3" class="banner">
+            <span id="btn-3" class="btn">SCROLL UP</span>
+        </div>
+        <div id="content-2" class="content">
+            <div id="text-2" class="text">
+                Scroll up and down to really get the feeling of how Parallax Scrolling works.
+            </div>
+        </div>
+        <div id="banner-4" class="banner banner-1-4">
+            <span id="btn-4" class="btn btn-1-4">COOL!</span>
+        </div>
+        </div>
+
+    </div>
+</body>
+</html>
